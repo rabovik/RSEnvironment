@@ -48,7 +48,7 @@ if (RSEnvironment.hardware.isIPadMini){
 }
 ```
 Detecting specific model:
-```
+```objective-c
 if (RSEHardwareModelIPhone5s == RSEnvironment.hardware.model){
     // iPhone5s-only code
 }
