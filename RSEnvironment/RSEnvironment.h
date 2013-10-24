@@ -143,8 +143,9 @@ typedef NS_ENUM(NSUInteger, RSEHardwareModel) {
     RSEHardwareModelIPad2,
     RSEHardwareModelIPad3,
     RSEHardwareModelIPad4,
-    RSEHardwareModelIPad5,
+    RSEHardwareModelIPadAir1,
     RSEHardwareModelIPadMini1,
+    RSEHardwareModelIPadMini2,
     RSEHardwareModelSimulator
 };
 
