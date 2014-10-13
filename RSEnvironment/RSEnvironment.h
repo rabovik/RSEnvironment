@@ -102,6 +102,9 @@ extern RSEKit *RSEnvironment;
 
 @property (nonatomic, readonly) BOOL isRetina;
 
+/// Detects if the screen has iPhone 6 Plus density
+@property (nonatomic, readonly) BOOL isRetinaHD;
+
 @property (nonatomic, readonly) CGFloat scale;
 
 /// Size of the screen in points;
@@ -112,6 +115,12 @@ extern RSEKit *RSEnvironment;
 
 /// Detects if the screen has iPhone 5/5S/5C size
 @property (nonatomic, readonly) BOOL is4InchSize;
+
+/// Detects if the screen has iPhone 6 size
+@property (nonatomic, readonly) BOOL is4_7InchSize;
+
+/// Detects if the screen has iPhone 6 Plus size
+@property (nonatomic, readonly) BOOL is5_5InchSize;
 
 @end
 
@@ -139,6 +148,8 @@ typedef NS_ENUM(NSUInteger, RSEHardwareModel) {
     RSEHardwareModelIPhone5,
     RSEHardwareModelIPhone5c,
     RSEHardwareModelIPhone5s,
+    RSEHardwareModelIPhone6,
+    RSEHardwareModelIPhone6Plus,
     RSEHardwareModelIPad1,
     RSEHardwareModelIPad2,
     RSEHardwareModelIPad3,
