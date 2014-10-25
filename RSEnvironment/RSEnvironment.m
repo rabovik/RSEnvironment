@@ -397,6 +397,7 @@ static NSDictionary *modelsData(){
     dispatch_once(&onceToken, ^{
         // Filling only devices that can run iOS 5
         // See http://theiphonewiki.com/wiki/Models
+        // See also http://www.everymac.com/systems/apple/index-apple-specs-applespec.html#apple_ipod_iphone_ipad_specs
         data =  @{
                   // iPod
                   @"iPod3,1": @{hwModel: @(RSEHardwareModelIPodTouch3G),
@@ -488,6 +489,15 @@ static NSDictionary *modelsData(){
                   @"iPad4,2":@{hwModel: @(RSEHardwareModelIPadAir1),
                                hwFamily: @(RSEHardwareFamilyIPadStandard),
                                hwModelName: @"iPad Air (Cellular)"},
+                  @"iPad4,3":@{hwModel: @(RSEHardwareModelIPadAir1),
+                               hwFamily: @(RSEHardwareFamilyIPadStandard),
+                               hwModelName: @"iPad Air (Cellular CN)"},
+                  @"iPad5,3":@{hwModel: @(RSEHardwareModelIPadAir2),
+                               hwFamily: @(RSEHardwareFamilyIPadStandard),
+                               hwModelName: @"iPad Air 2 (Wi-Fi)"},
+                  @"iPad5,4":@{hwModel: @(RSEHardwareModelIPadAir2),
+                               hwFamily: @(RSEHardwareFamilyIPadStandard),
+                               hwModelName: @" 	iPad Air 2 (Cellular)"},
                   // iPad Mini
                   @"iPad2,5":@{hwModel: @(RSEHardwareModelIPadMini1),
                                hwFamily: @(RSEHardwareFamilyIPadMini),
@@ -504,6 +514,16 @@ static NSDictionary *modelsData(){
                   @"iPad4,5":@{hwModel: @(RSEHardwareModelIPadMini2),
                                hwFamily: @(RSEHardwareFamilyIPadMini),
                                hwModelName: @"iPad Mini 2 (Cellular)"},
+                  @"iPad4,6":@{hwModel: @(RSEHardwareModelIPadMini2),
+                               hwFamily: @(RSEHardwareFamilyIPadMini),
+                               hwModelName: @"iPad Mini 2 (Cellular CN)"},
+                  @"iPad4,7":@{hwModel: @(RSEHardwareModelIPadMini3),
+                               hwFamily: @(RSEHardwareFamilyIPadMini),
+                               hwModelName: @"iPad Mini 3 (Wi-Fi)"},
+                  @"iPad4,8":@{hwModel: @(RSEHardwareModelIPadMini3),
+                               hwFamily: @(RSEHardwareFamilyIPadMini),
+                               hwModelName: @"iPad Mini 3 (Cellular)"},
+
                   // Simulator
                   @"i386":@{hwModel: @(RSEHardwareModelSimulator),
                             hwFamily: @(RSEHardwareFamilySimulator),
