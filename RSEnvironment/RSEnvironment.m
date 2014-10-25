@@ -238,6 +238,11 @@ RSEKit *RSEnvironment;
 	return self;
 }
 
+-(BOOL)isEqual:(id)object{
+    return [object isKindOfClass:[RSEVersion class]] &&
+        self.numericRepresentation == [object numericRepresentation];
+}
+
 -(BOOL)isEqualTo:(NSString *)version{
     return self.numericRepresentation ==
         [RSEVersion versionWithString:version].numericRepresentation;
