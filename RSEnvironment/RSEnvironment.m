@@ -332,11 +332,11 @@ RSEKit *RSEnvironment;
 }
 
 - (BOOL)is4_7InchSize {
-  return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  667.0f;
+    return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  667.0f;
 }
 
 - (BOOL)is5_5InchSize {
-  return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  736.0f;
+    return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  736.0f;
 }
 
 @end
