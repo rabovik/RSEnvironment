@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "RSEnvironment"
-  s.version      = "0.0.1"
+  s.version      = "0.0.3"
   s.summary      = "Most common environment checks in one place: system version, retina support, UI flat mode, device models and so on."
   s.homepage     = "https://github.com/rabovik/RSEnvironment"
   s.license      = 'MIT'
