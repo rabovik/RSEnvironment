@@ -230,7 +230,10 @@ RSEKit *RSEnvironment;
     
     _numericRepresentation = _major * 10000 + _minor * 100 + _micro;
     
-    _string = [NSString stringWithFormat:@"%u.%u.%u",major,minor,micro];
+    _string = [NSString stringWithFormat:@"%u.%u.%u",
+               (uint32_t)major,
+               (uint32_t)minor,
+               (uint32_t)micro];
     
 	return self;
 }
