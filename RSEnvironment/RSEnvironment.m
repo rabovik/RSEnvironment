@@ -305,6 +305,11 @@ RSEKit *RSEnvironment;
     return self.scale > 1.0f;
 }
 
+-(BOOL)isRetinaHD{
+  return self.scale > 2.0f;
+}
+
+
 -(CGFloat)scale{
     return [UIScreen mainScreen].scale;
 }
@@ -321,6 +326,14 @@ RSEKit *RSEnvironment;
 
 -(BOOL)is4InchSize{
     return RSEnvironment.UI.isIdiomIPhone && self.size.height == 568.0f;
+}
+
+- (BOOL)is4_7InchSize {
+  return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  667.0f;
+}
+
+- (BOOL)is5_5InchSize {
+  return RSEnvironment.UI.isIdiomIPhone && self.size.height ==  736.0f;
 }
 
 @end
@@ -429,6 +442,12 @@ static NSDictionary *modelsData(){
                   @"iPhone6,2":@{hwModel: @(RSEHardwareModelIPhone5s),
                                  hwFamily: @(RSEHardwareFamilyIPhone),
                                  hwModelName: @"iPhone 5s (Global)"},
+                  @"iPhone7,1":@{hwModel: @(RSEHardwareModelIPhone6Plus),
+                                 hwFamily: @(RSEHardwareFamilyIPhone),
+                                 hwModelName: @"iPhone 6 Plus (Global)"},
+                  @"iPhone7,2":@{hwModel: @(RSEHardwareModelIPhone6),
+                                 hwFamily: @(RSEHardwareFamilyIPhone),
+                                 hwModelName: @"iPhone 6 (Global)"},
                   // iPad
                   @"iPad1,1":@{hwModel: @(RSEHardwareModelIPad1),
                                hwFamily: @(RSEHardwareFamilyIPadStandard),
