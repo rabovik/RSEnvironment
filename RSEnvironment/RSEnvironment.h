@@ -113,6 +113,9 @@ extern RSEKit *RSEnvironment;
 /// Resolution of the screen in pixels;
 @property (nonatomic, readonly) CGSize resolution;
 
+/// Detects if the screen has iPhone 4/4S size
+@property (nonatomic, readonly) BOOL is3_5InchSize;
+
 /// Detects if the screen has iPhone 5/5S/5C size
 @property (nonatomic, readonly) BOOL is4InchSize;
 
