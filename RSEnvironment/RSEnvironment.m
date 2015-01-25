@@ -173,7 +173,7 @@ RSEKit *RSEnvironment;
 
 @end
 
-#pragma mark └ .version
+#pragma mark - .version
 @implementation RSEVersion
 
 +(instancetype)versionWithString:(NSString *)version{
@@ -330,6 +330,10 @@ RSEKit *RSEnvironment;
     CGSize size = self.size;
     CGFloat scale = self.scale;
     return CGSizeMake(size.width * scale, size.height * scale);
+}
+
+-(BOOL)is3_5InchSize{
+    return RSEnvironment.UI.isIdiomIPhone && self.size.height == 480.f;
 }
 
 -(BOOL)is4InchSize{
