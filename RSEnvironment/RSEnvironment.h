@@ -153,6 +153,8 @@ typedef NS_ENUM(NSUInteger, RSEHardwareModel) {
     RSEHardwareModelIPhone5s,
     RSEHardwareModelIPhone6,
     RSEHardwareModelIPhone6Plus,
+    RSEHardwareModelIPhone6s,
+    RSEHardwareModelIPhone6sPlus,
     RSEHardwareModelIPad1,
     RSEHardwareModelIPad2,
     RSEHardwareModelIPad3,

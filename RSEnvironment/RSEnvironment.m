@@ -461,6 +461,12 @@ static NSDictionary *modelsData(){
                   @"iPhone7,2":@{hwModel: @(RSEHardwareModelIPhone6),
                                  hwFamily: @(RSEHardwareFamilyIPhone),
                                  hwModelName: @"iPhone 6 (Global)"},
+                  @"iPhone8,1":@{hwModel: @(RSEHardwareModelIPhone6s),
+                                 hwFamily: @(RSEHardwareFamilyIPhone),
+                                 hwModelName: @"iPhone 6s (Global)"},
+                  @"iPhone8,2":@{hwModel: @(RSEHardwareModelIPhone6sPlus),
+                                 hwFamily: @(RSEHardwareFamilyIPhone),
+                                 hwModelName: @"iPhone 6s Plus (Global)"},
                   // iPad
                   @"iPad1,1":@{hwModel: @(RSEHardwareModelIPad1),
                                hwFamily: @(RSEHardwareFamilyIPadStandard),
